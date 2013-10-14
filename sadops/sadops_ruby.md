@@ -11,9 +11,8 @@ Extra bonus for automating the solution
 
 The system will setup an ubuntu machine that will have ruby installed. Please wait while it prepares the system.
 
-@action: [ruby.install](#action-ruby-install)
-
-@action: [sadops.install](#action-sadops-install)
+- @action: [ruby.install](#action.ruby.install)
+- @action: [sadops.install](#action.sadops.install)
 
 ## Exercise
 Now we're going to trigger a memory leak, can you fix it?
@@ -28,9 +27,10 @@ Now we're going to trigger a memory leak, can you fix it?
 - cwd: /var/tmp/sadops
 - user: sadops
 
-## action-ruby-install
+## action.ruby.install
 - command: @codeblock
 - user: root
+- type: exec
 
 ```
 # Remove current ruby
@@ -43,8 +43,10 @@ apt-get install -y ruby1.9.1
 apt-get install -y rubygems1.9.1
 ```
 
-## action-sadops-install
+# Actions
+## action.sadops.install
 - command: @codeblock
+- type: exec
 - user: ubuntu
 
 ```
