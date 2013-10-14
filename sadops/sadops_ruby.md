@@ -11,17 +11,19 @@ Extra bonus for automating the solution
 
 The system will setup an ubuntu machine that will have ruby installed. Please wait while it prepares the system.
 
-- @action: [ruby.install](#action-ruby-install)
-- @action: [sadops.install](#action-sadops-install)
+- @action: [Install Ruby](#action-ruby-install)
+- @action: [Install Sadops](#action-sadops-install)
 
 ## Exercise
 Now we're going to trigger a memory leak, can you fix it?
 
-@action: [sad.leaky](#action-sad-leaky)
+@action: [Trigger Memory Leak](#action-sad-leaky)
 
-<#action-sad-leaky>
+@check: [Check if Memory Leak solved](#check-sad-leaky-ok)
 
-@check: sad.leaky.ok
+
+# Checks
+## check-sad-leaky-ok
 - command: `cat test sad:leaky`
 - cwd: /var/tmp/sadops
 - user: sadops
