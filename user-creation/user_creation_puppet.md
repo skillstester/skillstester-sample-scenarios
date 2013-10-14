@@ -18,7 +18,7 @@ Let's see if you can create a user ubuntu with:
 - username: ubuntu
 - homedir: /home/ubuntu
 
-- @set: [An ubuntu user](#settings-ubuntu-user)
+- @setting: [An ubuntu user](#settings-ubuntu-user)
 
 Waiting until you finish the job ...
 
@@ -73,7 +73,7 @@ getent passwd {{{ scenario.username }}} | cut -d ':' -f 6 | grep -w {{{ scenario
 ```
 
 # Settings
-## settings-ubuntu-user:1
+## setting-ubuntu-user
 - username: 'ubuntu'
 - homedir: '/home/ubuntu'
 - group: admins
