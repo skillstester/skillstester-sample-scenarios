@@ -60,20 +60,12 @@ getent passwd {{{ scenario.username }}} | cut -d ':' -f 6 | grep -w {{{ scenario
 
 @action: ubuntu.user.created
 - type: exec
+- user: root
 - command: @codeblock
 
 ```
-group { '{{{ scenario.group }}}':
-  gid => {{{ scenario.gid }}}
-}
-
-user { '{{{ scenario.username }}}':
-  uid     => {{{ scenario.uid }}},
-  homedir => '{{{ scenario.homedir }}}',
-  gid     => {{{ scenario.gid }}},
-  after   => [ Group['{{{ scenario.group }}}']]
-}
-
+groupadd admins --gid 1000
+useradd -m ubuntu -d /home/ubuntu --gid 1000
 ```
 
 # Actions
