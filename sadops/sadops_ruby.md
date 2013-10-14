@@ -12,6 +12,7 @@ Extra bonus for automating the solution
 The system will setup an ubuntu machine that will have ruby installed. Please wait while it prepares the system.
 
 @action: [ruby.install](#action-ruby-install)
+
 @action: [sadops.install](#action-sadops-install)
 
 ## Exercise
