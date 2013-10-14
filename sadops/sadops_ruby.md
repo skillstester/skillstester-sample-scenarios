@@ -1,10 +1,10 @@
-# Introduction
-for more information on this setup, check the sadops github repo:
-<https://github.com/railsmachine/sadops>
 # Scenario
 ## Survive Rails skills
 At Railsmachine we have many situations that a skilled engineer has to cope with.
 With [Sadops](http://sadops), we've tried to recreate these situations. Now get ready to fight the storm!
+
+for more information on this setup, check the sadops github repo:
+<https://github.com/railsmachine/sadops>
 
 Extra bonus for automating the solution
 
