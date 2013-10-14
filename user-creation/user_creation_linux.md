@@ -26,11 +26,13 @@ Let's see if you can create a user ubuntu with:
 - primary group: {{{ scenario.group }}}
 - gid: {{{ scenario.gid }}}
 
+Let's see if you can create that user. We'll be waiting until you succeed.
+
 - @check: [User created](#check-user-created)
 
 ### Solution:
 
-- @action: [Create Ubuntu User](#action-user-created)
+- @action: [Create Ubuntu User](#action-user-create)
 
 # Actions
 ## action-user-create
