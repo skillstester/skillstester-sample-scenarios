@@ -11,10 +11,7 @@ Extra bonus for automating the solution
 
 The system will setup an ubuntu machine that will have ruby installed. Please wait while it prepares the system.
 
-@action: ruby.install
-
-@action: sadops.install
-
+@action: [ruby.install](#action-ruby-install)
 @action: [sadops.install](#action-sadops-install)
 
 ## Exercise
@@ -30,8 +27,7 @@ Now we're going to trigger a memory leak, can you fix it?
 - cwd: /var/tmp/sadops
 - user: sadops
 
-# Actions:
-@action: ruby.install
+## action-ruby-install
 - command: @codeblock
 - user: root
 
