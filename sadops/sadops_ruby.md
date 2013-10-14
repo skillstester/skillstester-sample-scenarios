@@ -1,3 +1,7 @@
+# Introduction
+for more information on this setup, check the sadops github repo:
+<https://github.com/railsmachine/sadops>
+
 # Scenario
 ## Survive Rails skills
 At Railsmachine we have many situations that a skilled engineer has to cope with.
@@ -34,7 +38,6 @@ wget http://nodejs.org/dist/v0.10.20/node-v0.10.20-linux-x64.tar.gz
 tar -xzvf node-v0.10.20-linux-x64.tar.gz
 cp node-v0.10.20-linux-x64/bin/node /usr/bin/node
 chmod +x /usr/bin/node
-
 
 # Clone the sadops repo
 apt-get install -y git
@@ -84,12 +87,12 @@ cap vagrant sadops:populate_things
 Now we're going to trigger a memory leak, can you fix it?
 
 @action: sad.leaky
-- command: cap vagrant sad:leaky
+- command: `cap vagrant sad:leaky`
 - cwd: /var/tmp/sadops
 - user: sadops
 
 @check: sad.leaky.ok
-- command cat test sad:leaky
+- command: `cat test sad:leaky`
 - cwd: /var/tmp/sadops
 - user: sadops
 
