@@ -17,7 +17,9 @@ The system will setup an ubuntu machine that will have ruby installed. Please wa
 ## Exercise
 Now we're going to trigger a memory leak, can you fix it?
 
-@action: [sad.leaky](#sad-leaky)
+@action: [sad.leaky](#action-sad-leaky)
+
+<#action-sad-leaky>
 
 @check: sad.leaky.ok
 - command: `cat test sad:leaky`
