@@ -33,7 +33,7 @@ I'll be waiting until you finish the job ...
 - type: exec
 - command: @codeblock
 
-```
+```puppet
 group { '{{{ scenario.group }}}':
   gid => {{{ scenario.gid }}}
 }

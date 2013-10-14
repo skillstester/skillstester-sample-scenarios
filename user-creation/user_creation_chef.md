@@ -38,7 +38,7 @@ Related resources are:
 - type: exec
 - command: @codeblock
 
-```chef
+```ruby
 group "{{{ scenario.group }}}" do
   gid "{{{ scenario.gid }}}"
 end
