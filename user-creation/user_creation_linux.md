@@ -16,12 +16,7 @@ _Hints:_
 Use `man useradd` and `man groupadd`.
 
 ### Exercise:
-@set:
-- username: 'ubuntu'
-- homedir: '/home/ubuntu'
-- group: admins
-- uid: 3000
-- gid : 3000
+- @setting: [An ubuntu User](#setting-ubuntu-user)
 
 Let's see if you can create a user ubuntu with:
 
@@ -31,7 +26,24 @@ Let's see if you can create a user ubuntu with:
 - primary group: {{{ scenario.group }}}
 - gid: {{{ scenario.gid }}}
 
-@check: ubuntu.user.created
+- @check: [User created](#check-user-created)
+
+### Solution:
+
+- @action: [Create Ubuntu User](#action-user-created)
+
+# Actions
+## action-user-create
+- type: exec
+- user: root
+- command: @codeblock
+
+```
+groupadd admins --gid 1000
+useradd -m ubuntu -d /home/ubuntu --gid 1000
+```
+# Checks
+## check-user-created
 - type: exec
 - command: @codeblock
 - user: {{{ scenario.username }}}
@@ -55,18 +67,10 @@ id -g | grep -w {{{ scenario.gid }}}
 # Check homedirectory
 getent passwd {{{ scenario.username }}} | cut -d ':' -f 6 | grep -w {{{ scenario.homedir }}}
 ```
-
-### Solution:
-
-@action: ubuntu.user.created
-- type: exec
-- user: root
-- command: @codeblock
-
-```
-groupadd admins --gid 1000
-useradd -m ubuntu -d /home/ubuntu --gid 1000
-```
-
-# Actions
-# Checks
+# Settings
+## setting-ubuntu-user
+- username: 'ubuntu'
+- homedir: '/home/ubuntu'
+- group: admins
+- uid: 3000
+- gid : 3000
