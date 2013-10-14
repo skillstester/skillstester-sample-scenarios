@@ -11,6 +11,7 @@ Extra bonus for automating the solution
 
 The system will setup an ubuntu machine that will have ruby installed. Please wait while it prepares the system.
 
+- @hardware: [Ubuntu Machine](#hardware-ubuntu)
 - @action: [Install Ruby](#action-ruby-install)
 - @action: [Install Sadops](#action-sadops-install)
 
@@ -25,6 +26,12 @@ A memory leak was cause, can you fix it?
 
 ## Solution
 @action: [Fix Memory Leak](#action-fix-sad-leaky)
+
+# Hardware
+## hardware-ubuntu
+- type: vm
+- provider: vagrant
+- image: ubuntu-12.04
 
 # Checks
 ## check-sad-leaky-ok
