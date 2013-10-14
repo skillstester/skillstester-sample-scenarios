@@ -12,6 +12,26 @@ Extra bonus for automating the solution
 The system will setup an ubuntu machine that will have ruby installed. Please wait while it prepares the system.
 
 @action: ruby.install
+
+@action: sadops.install
+
+@action: [sadops.install](#action-sadops-install)
+
+## Exercise
+Now we're going to trigger a memory leak, can you fix it?
+
+@action: sad.leaky
+- command: `cap vagrant sad:leaky`
+- cwd: /var/tmp/sadops
+- user: sadops
+
+@check: sad.leaky.ok
+- command: `cat test sad:leaky`
+- cwd: /var/tmp/sadops
+- user: sadops
+
+# Actions:
+@action: ruby.install
 - command: @codeblock
 - user: root
 
@@ -20,12 +40,13 @@ The system will setup an ubuntu machine that will have ruby installed. Please wa
 apt-get remove -y ruby
 apt-get remove -y ruby1.8-dev
 apt-get remove -y rubygems
+
 # Install ruby 1.9.1
 apt-get install -y ruby1.9.1
 apt-get install -y rubygems1.9.1
 ```
 
-@action: sadops.install
+## action-sadops-install
 - command: @codeblock
 - user: ubuntu
 
@@ -82,22 +103,6 @@ mkdir /srv/sadops/releases
 
 cap vagrant sadops:populate_things
 ```
-
-## Exercise
-Now we're going to trigger a memory leak, can you fix it?
-
-@action: sad.leaky
-- command: `cap vagrant sad:leaky`
-- cwd: /var/tmp/sadops
-- user: sadops
-
-@check: sad.leaky.ok
-- command: `cat test sad:leaky`
-- cwd: /var/tmp/sadops
-- user: sadops
-
-
-@action:
 
 ## Solution
 __We need to write this section__
