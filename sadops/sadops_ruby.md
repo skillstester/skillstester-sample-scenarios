@@ -1,7 +1,6 @@
 # Introduction
 for more information on this setup, check the sadops github repo:
 <https://github.com/railsmachine/sadops>
-
 # Scenario
 ## Survive Rails skills
 At Railsmachine we have many situations that a skilled engineer has to cope with.
@@ -18,14 +17,18 @@ The system will setup an ubuntu machine that will have ruby installed. Please wa
 ## Exercise
 Something is happening , hang on ....
 
-@action: [Trigger Memory Leak](#action-sad-leaky)
+- @action: [Trigger Memory Leak](#action-sad-leaky)
 
 A memory leak was cause, can you fix it?
 
-@check: [Check if Memory Leak solved](#check-sad-leaky-ok)
+- @check: [Check if Memory Leak solved](#check-sad-leaky-ok)
 
 ## Solution
-@action: [Fix Memory Leak](#action-fix-sad-leaky)
+Well you can do many things, but here is the solution:
+
+`sudo apt-get -y install solution`
+
+- @action: [Fix Memory Leak](#action-fix-sad-leaky)
 
 # Hardware
 ## hardware-ubuntu
