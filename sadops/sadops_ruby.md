@@ -15,12 +15,16 @@ The system will setup an ubuntu machine that will have ruby installed. Please wa
 - @action: [Install Sadops](#action-sadops-install)
 
 ## Exercise
-Now we're going to trigger a memory leak, can you fix it?
+Something is happening , hang on ....
 
 @action: [Trigger Memory Leak](#action-sad-leaky)
 
+A memory leak was cause, can you fix it?
+
 @check: [Check if Memory Leak solved](#check-sad-leaky-ok)
 
+## Solution
+@action: [Fix Memory Leak](#action-fix-sad-leaky)
 
 # Checks
 ## check-sad-leaky-ok
@@ -107,6 +111,7 @@ cap vagrant sadops:populate_things
 - cwd: /var/tmp/sadops
 - user: sadops
 
-## Solution
-__We need to write this section__
-
+## action-fix-sad-leaky
+- command: `cap vagrant deploy:reset`
+- cwd: /var/tmp/sadops
+- user: sadops
