@@ -1,5 +1,5 @@
 # Scenario
-## User creation - Puppet Skills
+## User creation with puppet
 ### Description:
 Today we are going to focus on the user creation with puppet.
 
@@ -11,6 +11,8 @@ A user typically consists of a:
 - primary group: integer that is the group id
 
 ### Exercise:
+- @setting: [An ubuntu user](#settings-ubuntu-user)
+
 Let's see if you can create a user ubuntu with:
 
 - uid: 1000
@@ -18,9 +20,7 @@ Let's see if you can create a user ubuntu with:
 - username: ubuntu
 - homedir: /home/ubuntu
 
-- @setting: [An ubuntu user](#settings-ubuntu-user)
-
-Waiting until you finish the job ...
+I'll be waiting until you finish the job ...
 
 - @check: [Is user created?](#check-user-created)
 
