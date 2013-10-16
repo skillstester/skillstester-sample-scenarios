@@ -11,7 +11,7 @@ A user typically consists of a:
 - primary group: integer that is the group id
 
 ### Exercise:
--> @setting: [An ubuntu user](#settings-ubuntu-user)
+=> @setting: [An ubuntu user](#settings-ubuntu-user)
 
 Let's see if you can create a user ubuntu with:
 
@@ -22,11 +22,11 @@ Let's see if you can create a user ubuntu with:
 
 I'll be waiting until you finish the job ...
 
--> @check: [Is user created?](#check-user-created)
+=> @check: [Is user created?](#check-user-created)
 
 ### Solution:
 
--> @action: [Create user with puppet](#action-user-create)
+=> @action: [Create user with puppet](#action-user-create)
 
 # Actions
 ## action-user-create
