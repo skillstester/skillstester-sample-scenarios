@@ -10,25 +10,25 @@ Extra bonus for automating the solution
 
 The system will setup an ubuntu machine that will have ruby installed. Please wait while it prepares the system.
 
-- @hardware: [Ubuntu Machine](#hardware-ubuntu)
-- @action: [Install Ruby](#action-ruby-install)
-- @action: [Install Sadops](#action-sadops-install)
+-> @hardware: [Ubuntu Machine](#hardware-ubuntu)
+-> @action: [Install Ruby](#action-ruby-install)
+-> @action: [Install Sadops](#action-sadops-install)
 
 ## Exercise
 Something is happening , hang on ....
 
-- @action: [Trigger Memory Leak](#action-sad-leaky)
+-> @action: [Trigger Memory Leak](#action-sad-leaky)
 
 A memory leak was cause, can you fix it?
 
-- @check: [Check if Memory Leak solved](#check-sad-leaky-ok)
+-> @check: [Check if Memory Leak solved](#check-sad-leaky-ok)
 
 ## Solution
 Well you can do many things, but here is the solution:
 
 `sudo apt-get -y install solution`
 
-- @action: [Fix Memory Leak](#action-fix-sad-leaky)
+-> @action: [Fix Memory Leak](#action-fix-sad-leaky)
 
 # Hardware
 ## hardware-ubuntu

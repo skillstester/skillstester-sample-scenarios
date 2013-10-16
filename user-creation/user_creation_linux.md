@@ -16,7 +16,7 @@ _Hints:_
 Use `man useradd` and `man groupadd`.
 
 ### Exercise:
-- @setting: [An ubuntu User](#setting-ubuntu-user)
+-> @setting: [An ubuntu User](#setting-ubuntu-user)
 
 Let's see if you can create a user ubuntu with:
 
@@ -28,11 +28,11 @@ Let's see if you can create a user ubuntu with:
 
 Let's see if you can create that user. We'll be waiting until you succeed.
 
-- @check: [User created](#check-user-created)
+-> @check: [User created](#check-user-created)
 
 ### Solution:
 
-- @action: [Create Ubuntu User](#action-user-create)
+-> @action: [Create Ubuntu User](#action-user-create)
 
 # Actions
 ## action-user-create
